@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>form</title>
+        <link rel="stylesheet" href="form.css">
+    </head>
+    <body>
+        <div class="header">STUDENT REGISTRATION DETAILS</div>
+        <div class="main_block">
+            <ul>
+            <div class="child_block">
+                <div class="child1">USER DEATILS</div>
+                <li>Name:<input type="text" name="name" id="name"></li>
+                <li>Age:<input type="number" id="age"></li>
+                <li>Gender:<input type="radio" name="gender"  value="male" checked>male<input type="radio" name="gender" value="female" >female</li>
+                <li class="address">Address:<textarea name="address"></textarea></li>
+            </div>
+            <div class="child_block2">
+                <div class="education">EDUCATION DETAILS</div>
+                <li>Qualification:<input type="checkbox" name="qualification" value="mtech">Mtech<input type="checkbox" value="btech"  name="qualification">Btech<input type="checkbox" value="diploma"  name="qualification">Diploma
+                <li>Languages:<input type="checkbox" name="language" value="English" >English<input type="checkbox" name="language" value="Telugu">Telugu<input type="checkbox" value="Hindi" name="language">Hindi</li>
+                <li class="course">Course options:<select for="course" id="course">
+                    <option>select</option>
+                    <option value="UI fullstack">UI fullstack</option>
+                    <option value="java">Java fullstack</option>
+                    <option value="python">Python fullstack</option>
+                    <option value=".net">.net</option>
+                    <option value="linux">linux</option>
+                    <option value="ui&ux">UI&UX</option>
+                </select></li>
+            </div>
+            <div class="child_block3">
+                <div class="about">ABOUT YOUR-SELF</div>
+                 tell about your-self few words:<textarea name="urself" rows="2" cols="20"></textarea>
+                <li class="submit">submit:<input type="submit" name="submit" onclick="information ()"></li>
+            </div>
+        </div>    
+            <div class="footer">@copyright2023</div>
+            </ul>
+            <ol id="displaydetails">
+                <li>name :<span id ="dname"></span></li>
+                <li>age :<span id ="dage"></span></li>
+                <li>gender :<span id ="dgender"></span></li>
+                <li>Languages :<span id ="dlanguages"></span></li>
+                <li>Qualification :<span id ="dqualifiaction"></span></li>
+                <li>course :<span id ="dcourse"></span></li>
+                <li>about :<span id="dabout"></span></li>
+            </ol>
+        <script src="form.js">
+        </script>
+    </body>
+</html>

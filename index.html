@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/portfolio.css">
+        <script src="./js/portfolio.js"></script>
+        <script src="https://kit.fontawesome.com/fe1ca1f085.js" crossorigin="anonymous"></script>
+        <title>my portfolio</title>
+    </head>
+    <body>
+
+        <div id="header">
+           
+            <div class="container">
+                <nav>
+                   <img class="logo" alt="">
+                <ul>
+                    <li ><a href="#header">Home</a></li>
+                    <li ><a href="#about">About</a></li>
+                    <li ><a href="#services">Services</a></li>
+                    <li ><a href="#portfolio">portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times " onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p><span class="UI">UI</span> Full-Stack Developer</p>
+                <h1>Hi, I'm Naga Surendra <span>Pepakayala</span> <br>I'm From <span>India.</span></h1>
+            </div>
+            </div>
+        </div>
+
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="./images/photo_2024-02-10_09-04-47.jpg">
+                    </div>   
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am a passionate and versatile UI Full Stack Developer dedicated to crafting exceptional web experiences. 
+                        With a creative eye for design and a strong command of both front-end and back-end technologies,
+                         I bring a unique blend of skills to the world of web development.
+                        I am passionate about creating beautiful, user-friendly web experiences that leave a lasting impression. 
+                        I thrive on challenges, constantly seeking to expand my skill set and stay at the forefront of the ever-evolving web development landscape.</p>
+
+                          <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('Education')">Education</p>
+                            <!-- <p class="tab-links">Projects</p>  -->
+                        </div>
+                        <div class="tab-contents active-tab" id="Skills" >
+                            <ul>
+                                <li><span>Web development</span><br>Designing Web Interfaces.</li>
+                                <li><span>Application development</span><br>Designing Web Application Development.</li>
+                                <li><span>Game development</span><br>Designing Online Game Application.</li>
+                            </ul>
+                        </div>  
+                        
+                        <div class="tab-contents" id="Education">
+                            <ul>
+                                <li><span>2020-2023</span><br>B.Tech from vsm college of engineering-ECE</li>
+                                <li><span>2017-2020</span><br>Diplamo from vsm  college of engineering-ECE</li>
+                                <li><span>2016-2017</span><br>Schooling from high school.</li>
+                            </ul>
+                            </div>      
+                        
+                        </div>     
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <div id="services">
+            <div class="container">
+              <h1 class="sub-title">My Services</h1>
+              <div class="services-list">
+                    <div>
+                        <i class="fa-solid fa-code fa-bounce"></i>
+                        <h2>Web Design</h2>
+                        <p>Creating the user interface of web applications using HTML, CSS, and JavaScript.
+                            Designing responsive layouts that adapt to various screen sizes and devices.</p>
+                            <a href="#">learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-light fa-crop fa-flip"></i>
+                        <h2>Responsive Design</h2>
+                        <p>Ensuring that web applications are optimized for various devices, including desktops, tablets, and smartphones.</p>
+                            <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-app-store fa-beat-fade"></i>
+                        <h2>Back-End Development</h2>
+                        <p>Building server-side logic and infrastructure using server-side programming languages (e.g., Node.js).</p>
+                            <a href="#">Learn more</a>
+                    </div>
+              </div>
+            </div>
+        </div>
+                    <div id="portfolio">
+                        <div class="container">
+                            <h1 class="sub-title">My Work</h1>
+                            <div class="work-list">
+                                <div class="work">
+                                    <img src="https://www.shutterstock.com/image-photo/register-membership-application-registration-join-260nw-248855065.jpg" alt="">
+                                    <div class="layer">
+                                        <h3>Registration Form</h3>
+                                        <p>This project may helps for getting student details</p>
+                                            <a href="./projects/Registration page/index.html"><i class="fas fa-external-link-alt" style="color: #1f3051;"></i></a>
+                                    </div>
+                                </div>
+                                <div class="work">
+                                    <img src="https://www.codewithfaraz.com/img/login1.png" alt="">
+                                    <div class="layer">
+                                        <h3>Login-Page</h3>
+                                        <p>Building server-side logic and infrastructure using server-side programming languages (e.g., Node.js, Python, Ruby, Java, PHP).</p>
+                                            <a href="#"><i class="fas fa-external-link-alt" style="color: #1f3051;"></i></a>
+                                    </div>
+                                </div>
+                                <div class="work">
+                                    <img src="https://static.vecteezy.com/system/resources/previews/013/317/220/original/basic-calculator-with-set-of-digits-isolated-on-white-flat-design-eps-10-illustration-free-vector.jpg">
+                                    <div class="layer">
+                                        <h3>Calculator</h3>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                             Sint, excepturi.</p>
+                                             <a href="#"><i class="fas fa-external-link-alt" style="color: #1f3051;"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#" class="btn">See more</a>
+                        </div> 
+                    </div>
+
+        
+
+                    <div id="contact">
+                        <div class="container">
+                            <div class="row">
+                                <div class="contact-left">
+                                    <h1 class="sub-title">Contact Me</h1>
+                                    <p id="email"><i class="fas fa-paper-plane"></i>naidusurendra037@gmail.com</p>
+                                    <p><i class="fas fa-phone-square-alt"></i>7032643743</p>
+                                    <div class="social-icons">
+                                    <a href="https://www.facebook.com/"><i class="fa-brands fa-square-facebook"></i></a>
+                                    <a href="https://github.com/"><i class="fa-brands fa-github"></i></a>
+                                    <a href="https://www.instagram.com/?next=%2F"><i class="fa-brands fa-instagram"></i></a>
+                                    <a href="https://www.linkedin.com/feed/"><i class="fa-brands fa-linkedin"></i></a>
+                                </div>
+                                <a href="./resume/Surendra resume1.pdf" download class="btn btn2">Download Resume</a>
+                            </div>
+                                <div class="contact-rigth">
+                                    <form name="submit-to-google-sheet">
+                                        <input type="text" name="Name" placeholder="Your Name" required>
+                                        <input type="Email" name="Email" placeholder="Your Email" required>
+                                        <textarea name="Messaga"  rows="6" placeholder="Your Message"></textarea>
+                                        <button type="submit" class="btn btn2">Submit</button>
+                                    </form>
+                                    <span id="msg"></span>
+                                </div>
+                            </div>
+
+                        </div>                   
+                </body>
+                </html>
+</html>
